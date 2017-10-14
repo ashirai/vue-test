@@ -1,7 +1,7 @@
 {
   "name": "sonotize2-web-marketing",
   "version": "1.0.0",
-  "description": "Sonotize Marketing Website",
+  "description": "sonotize marketing website",
   "author": "ashirai <akira.shirai@gmail.com>",
   "private": true,
   "scripts": {

@@ -6,6 +6,30 @@
       <source src="../assets/home/concert.mp4" type="video/mp4">
     </video>
     <div class="full-screen-overlay"></div>
+    <Row class="content">
+      <Col span="24">
+        <img class="logo" src="../assets/_global/logo.png" alt="">
+        <div class="info">
+          <p>Get Rewarded for Loving Music</p>
+          <p>Sonotize is coming to Denver and Boulder</p>
+          <p class="icant">I can't even rn.</p>
+          <p>Yeah, I want rewards for going to shows!</p>
+        </div>
+        <Button type="ghost" shape="circle" class="sign-me-up">SIGN ME UP NOW</Button>
+
+        <div class="sns">
+          <span class="button-box">
+            <Button type="ghost" class="facebook" icon="social-facebook"></Button>
+          </span>
+          <span class="button-box">
+            <Button type="ghost" class="twitter" icon="social-twitter"></Button>
+          </span>
+          <span class="button-box">
+            <Button type="ghost" class="instagram" icon="social-instagram"></Button>
+          </span>
+        </div>
+      </Col>
+    </Row>
   </div>
 </template>
 
@@ -50,6 +74,63 @@
       background: rgba(0,0,0,0.7);
       background-size: cover;
       transition: 1s opacity;
+    }
+
+    $base-color: #00f7e0;
+
+    .content{
+      .logo{
+        width: 5%;
+        margin-bottom: 30px;
+      }
+      .info{
+        color: #FFFFFF;
+        font-size: 40px;
+        p{
+          margin-top: 15px;
+          &.icant{
+            margin-top: 40px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+      .sign-me-up{
+        margin-top: 80px;
+        font-size: 30px;
+        color: $base-color;
+        border-color: $base-color;
+        border-width: 3px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        &:hover{
+          color: #FFFFFF;
+          background-color: $base-color;
+        }
+      }
+      .sns{
+        margin-top: 30px;
+        color: $base-color;
+        display: flex;
+        justify-content: center;
+        .button-box{
+          width: 50px;
+          display: flex;
+          justify-content: center;
+          button{
+            width: 40px;
+            font-size: 30px;
+            background-color: transparent;
+            color: $base-color;
+            border-style: none;
+            cursor: pointer;
+            padding: 0;
+            &:active{
+              border-style: none;
+            }
+          }
+        }
+      }
     }
 
   }

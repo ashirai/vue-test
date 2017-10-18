@@ -19,13 +19,13 @@
 
         <div class="sns">
           <span class="button-box">
-            <Button type="ghost" class="facebook" icon="social-facebook"></Button>
+            <Button type="ghost" class="facebook" icon="social-facebook" @click="openLink('facebook')"></Button>
           </span>
           <span class="button-box">
-            <Button type="ghost" class="twitter" icon="social-twitter"></Button>
+            <Button type="ghost" class="twitter" icon="social-twitter" @click="openLink('twitter')"></Button>
           </span>
           <span class="button-box">
-            <Button type="ghost" class="instagram" icon="social-instagram"></Button>
+            <Button type="ghost" class="instagram" icon="social-instagram" @click="openLink('instagram')"></Button>
           </span>
         </div>
       </Col>
@@ -39,6 +39,25 @@
     data () {
       return {
         msg: 'This is Home'
+      }
+    },
+    methods: {
+      openLink: function (destination) {
+        let url
+        switch (destination) {
+          case 'facebook':
+            url = 'https://www.facebook.com/sonotize'
+            break
+          case 'twitter':
+            url = 'https://twitter.com/sonotize'
+            break
+          case 'instagram':
+            url = 'https://www.instagram.com/sonotize/'
+            break
+          default:
+            url = ''
+        }
+        window.open(url, '_blank')
       }
     }
   }

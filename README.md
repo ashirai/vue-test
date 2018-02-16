@@ -1,6 +1,6 @@
-# sonotize2-web-marketing
+# Vue test
 
-> sonotize web marketing
+> Vue test
 
 ## Build Setup
 
